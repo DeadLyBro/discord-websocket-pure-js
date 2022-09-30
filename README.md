@@ -3,11 +3,11 @@ You can share your little scripts on Discussion tab.
 
 # Usage
 
-Open `index.js` > Copy > open `Discord tab` or `Discord Application` > Open DevTools > Click `Console` Tab > Paste > Change `third line` with your `Token` and send it! 
+Open `index.js` > Copy > open `Discord tab` or `Discord Application` > Open `DevTools` > Click `Console` Tab > Paste > Change `third line` with your `Token` and send it! 
 
 ## If you can't open `Devtools` on `Discord Application` apply this; 
 
-1. Close Discord client (`Quit Discord` in system tray) !!! DONT SKIP THIS STEP !!! 
+1. Close Discord client (`Quit Discord` in system tray) !!! `DONT SKIP THIS STEP` !!! 
 2. Open the settings file, it's location depends on your OS:
    - Windows: `%appdata%\discord\settings.json`
    - macOS: `~/Library/Application Support/Discord/settings.json`
