@@ -1,9 +1,11 @@
 # discord-websocket-pure-js
 You can share your little scripts on Discussion tab.
 
-Open `index.js` > Copy > open `Discord tab` or `Discord Application` > Open DevTools > Paste > Change third line with your `Token` and send it! 
+# Usage
 
-If you can't open `Devtools` on `Discord Application` apply this; 
+Open `index.js` > Copy > open `Discord tab` or `Discord Application` > Open DevTools > Click `Console` Tab > Paste > Change third line with your `Token` and send it! 
+
+## If you can't open `Devtools` on `Discord Application` apply this; 
 
 1. Close Discord client (`Quit Discord` in system tray) !!! DONT SKIP THIS STEP !!! 
 2. Open the settings file, it's location depends on your OS:
