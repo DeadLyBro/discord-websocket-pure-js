@@ -1,3 +1,5 @@
+{
+
 var ws = new WebSocket("wss://gateway.discord.gg/?v=6&encoding=json");
 var interval = 0;
 var token = "YOUR_DISCORD_TOKEN"
@@ -42,3 +44,5 @@ ws.addEventListener("message", function incoming(data) {
        // console.log(d.author.username + ": " + d.content);
    // } This code work for if you're in 75 servers or above i think. Or you must use bot account? 
 });
+
+}
