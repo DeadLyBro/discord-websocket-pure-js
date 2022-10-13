@@ -1,5 +1,5 @@
 # discord-websocket-pure-js
-You can share your little scripts on Discussion tab.
+You can share your codes on Discussion tab.
 
 # Usage
 
@@ -16,4 +16,4 @@ Open `index.js` > Copy > open `Discord tab` or `Discord Application` > Open `Dev
 4. Save the file
 5. Restart/Open Discord client!
 
-Now you can use devtools pressing CTRL + Shift + i
+Now you can use devtools pressing `CTRL + Shift + i`
