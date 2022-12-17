@@ -38,11 +38,11 @@ ws.addEventListener("message", function incoming(data) {
          break;
    }
 
-   // switch (t) {
-          // IF MESSAGE IS CREATED, IT WILL LOG IN THE CONSOLE
-       // case "MESSAGE_CREATE":
-       // console.log(d.author.username + ": " + d.content);
-   // } This code work for if you're in 75 servers or above i think. Or you must use bot account? 
+   switch (t) {
+       // IF MESSAGE IS CREATED, IT WILL LOG IN THE CONSOLE
+       case "MESSAGE_CREATE":
+       console.log(d.author.username + ": " + d.content);
+   } // This code work for if you're in 75 servers or above i think. Or you must use bot account? 
 });
 
 }
