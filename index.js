@@ -1,6 +1,6 @@
 {
 
-var ws = new WebSocket("wss://gateway.discord.gg/?v=6&encoding=json"); // if something wrong change /?v=6 to /?v=7 or 8 or 9 or 10.
+var ws = new WebSocket("wss://gateway.discord.gg/?v=10&encoding=json"); // if something wrong change /?v=6 to /?v=7 or 8 or 9 or 10.
 var interval = 0;
 var token = "YOUR_DISCORD_TOKEN"
 
