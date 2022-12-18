@@ -1,6 +1,6 @@
 {
 
-var ws = new WebSocket("wss://gateway.discord.gg/?v=10&encoding=json"); // if something wrong change /?v=6 to /?v=7 or 8 or 9 or 10.
+var ws = new WebSocket("wss://gateway.discord.gg/?v=10&encoding=json");
 var interval = 0;
 var token = "YOUR_DISCORD_TOKEN"
 
@@ -32,7 +32,7 @@ ws.addEventListener("message", function incoming(data) {
       case 10:
          const { heartbeat_interval } = d;
          setInterval(() => {
-            ws.send(JSON.stringify({ op: 2, d: null })); // If automaticly close change op: 2 to op: 1 
+            ws.send(JSON.stringify({ op: 1, d: null }));
          }, heartbeat_interval);
 
          break;
@@ -41,8 +41,25 @@ ws.addEventListener("message", function incoming(data) {
    switch (t) {
        // IF MESSAGE IS CREATED, IT WILL LOG IN THE CONSOLE
        case "MESSAGE_CREATE":
-       console.log(d.author.username + ": " + d.content);
+
+       if (d.content != "") {
+            console.log(`%c${d.author.username}#${d.author.discriminator}` + "%c: " + `%c${d.content}`, "color: #7289d9", "color: #a1a1a1", "color: white");
+       } // If bot sending embed or other things, can't log. Just messages logged here.
+
+	   if (d.interaction != undefined) {
+            console.log("%cUser: " + `%c${(d.interaction).user.username}#${(d.interaction).user.discriminator}` + "%c used interaction named " + `%c${(d.interaction).name}` + ".", "color: yellow", "color: #4bd13f", "color: yellow", "color: #309ccf")
+	   } // Logs user interactions.
+
+	   if (d.attachments != "") {
+	        console.log("%cUser: " + `%c${(d.author).username}#${(d.author).discriminator}` + "%c sended a " + `%c${(d.attachments)[0].content_type}` + ".", "color: yellow", "color: #4bd13f", "color: yellow", "color: #309ccf")
+	   } // Logs sended attachment types. 
+
    }
+
+    // switch (t) { case "MESSAGE_UPDATE": if (d.content != "") { console.log( "%cUser: " + `%c${(d.author).username}#${(d.author).discriminator}` + "%c updated a message, new message: " + `%c${d.content}`, "color: yellow", "color: #4bd13f", "color: yellow", "color: #309ccf") } console.log(d) } // Don't use "MESSAGE_UPDATE" because you will get caught to rate limit.
+
+
+
 });
 
 }
