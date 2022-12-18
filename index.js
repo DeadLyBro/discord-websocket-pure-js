@@ -8,7 +8,7 @@ payload = {
    op: 2,
    d: {
       token: token,
-      intents: 512,
+      intents: 3276799, // All intents, you can check: https://discord-intents-calculator.vercel.app/ ( It's not my website/project. )
       properties: {
          $os: "linux",
          $browser: "chrome",
@@ -42,7 +42,7 @@ ws.addEventListener("message", function incoming(data) {
        // IF MESSAGE IS CREATED, IT WILL LOG IN THE CONSOLE
        case "MESSAGE_CREATE":
        console.log(d.author.username + ": " + d.content);
-   } // This code work for if you're in 75 servers or above i think. Or you must use bot account? 
+   }
 });
 
 }
