@@ -5,6 +5,10 @@ You can share your codes on Discussion tab.
 
 Open `index.js` > Copy > open `Discord tab` or `Discord Application` > Open `DevTools` > Click `Console` Tab > Paste > Change `fifth line` with your `Token` and send it! 
 
+# Intents
+
+You can get intent numbers from [this site](https://discord-intents-calculator.vercel.app/).
+
 ## If you can't open `Devtools` on `Discord Application` apply this; 
 
 1. Close Discord client (`Quit Discord` in system tray) !!! `DONT SKIP THIS STEP` !!! 
