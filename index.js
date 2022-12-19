@@ -46,13 +46,13 @@ ws.addEventListener("message", function incoming(data) {
             console.log(`%c${d.author.username}#${d.author.discriminator}` + "%c: " + `%c${d.content}`, "color: #7289d9", "color: #a1a1a1", "color: white");
        } // If bot sending embed or other things, can't log. Just messages logged here.
 
-	   if (d.interaction != undefined) {
+       if (d.interaction != undefined) {
             console.log("%cUser: " + `%c${(d.interaction).user.username}#${(d.interaction).user.discriminator}` + "%c used interaction named " + `%c${(d.interaction).name}` + ".", "color: yellow", "color: #4bd13f", "color: yellow", "color: #309ccf")
-	   } // Logs user interactions.
+       } // Logs user interactions.
 
-	   if (d.attachments != "") {
-	        console.log("%cUser: " + `%c${(d.author).username}#${(d.author).discriminator}` + "%c sended a " + `%c${(d.attachments)[0].content_type}` + ".", "color: yellow", "color: #4bd13f", "color: yellow", "color: #309ccf")
-	   } // Logs sended attachment types. 
+       if (d.attachments != "") {
+            console.log("%cUser: " + `%c${(d.author).username}#${(d.author).discriminator}` + "%c sended a " + `%c${(d.attachments)[0].content_type}` + ".", "color: yellow", "color: #4bd13f", "color: yellow", "color: #309ccf")
+       } // Logs sended attachment types. 
 
    }
 
