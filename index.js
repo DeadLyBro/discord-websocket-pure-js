@@ -8,7 +8,7 @@ identifyPayload = {
    op: 2,
    d: {
       token: token,
-      intents: 32769, // GUILDS + GUILD_MESSAGES + MESSAGE_CONTENT. If you want more, you can check this site =>   https://discord-intents-calculator.vercel.app   (NOT MY PROJECT/SITE.)
+      intents: 53608447, // All events (78 events). If you want more, you can check this site =>   https://discord-intents-calculator.vercel.app   (NOT MY PROJECT/SITE.)
       properties: {
          $os: 'linux',
          $browser: 'chrome',
