@@ -8,7 +8,7 @@ payload = {
    op: 2,
    d: {
       token: token,
-      intents: 3276799, // All intents, you can check: https://discord-intents-calculator.vercel.app/ ( It's not my website/project. )
+      intents: 53608447, // All intents (78 Events), you can check: https://discord-intents-calculator.vercel.app/ ( It's not my website/project. )
       properties: {
          $os: "linux",
          $browser: "chrome",
