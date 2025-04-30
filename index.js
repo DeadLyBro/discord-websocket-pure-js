@@ -81,11 +81,11 @@ ws.addEventListener('message', function incoming(data) {
    }
 });
 
-ws.addEventListener('close', (code, reason) => {
-  console.log(`Disconnected: ${code} - ${reason}`);
+ws.addEventListener('close', (event) => {
+  console.log(`Disconnected: ${event.code} - ${event.reason || 'No reason provided'}`);
   clearInterval(heartbeatTimer);
 });
 
-ws.addEventListener('error', (err) => {
-  console.error('WebSocket error:', err);
+ws.addEventListener('error', (event) => {
+  console.error('WebSocket error occurred:', event.message || event);
 });
